@@ -1,0 +1,72 @@
+{
+  "project": "cue-sample-plan",
+  "observed": "2026-10-17T06:27:25.468318+00:00",
+  "platform": "linux",
+  "python": "3.12.14 (main, Aug 25 2026, 14:00:49) [Clang 22.1.3 ]",
+  "checks": [
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "unittest",
+        "-q",
+        "test_behavior"
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": "----------------------------------------------------------------------\nRan 20 tests in 0.023s\n\nOK\n"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "compileall",
+        "-q",
+        "."
+      ],
+      "exit": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "-m",
+        "pip",
+        "wheel",
+        "--no-deps",
+        "--wheel-dir",
+        "dist",
+        "."
+      ],
+      "exit": 0,
+      "stdout": "Processing ./.\n  Installing build dependencies: started\n  Installing build dependencies: finished with status 'done'\n  Getting requirements to build wheel: started\n  Getting requirements to build wheel: finished with status 'done'\n  Preparing metadata (pyproject.toml): started\n  Preparing metadata (pyproject.toml): finished with status 'done'\nBuilding wheels for collected packages: cue-sample-plan\n  Building wheel for cue-sample-plan (pyproject.toml): started\n  Building wheel for cue-sample-plan (pyproject.toml): finished with status 'done'\n  Created wheel for cue-sample-plan: filename=cue_sample_plan-0.1.0-py3-none-any.whl size=5931 sha256=0e7d35f5a0193e9d73c5fbec91ba4a9bff6f62df73f58fc0a0cdedb8bf43cf7b\n  Stored in directory: /tmp/pip-ephem-wheel-cache-4eaxqsew/wheels/62/e4/e6/ae1037ec52e36399ae7ec36a4413332b11c43a1228c86ad5b6\nSuccessfully built cue-sample-plan\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "/tmp/gh17-cue-sample-plan/bin/python",
+        "-m",
+        "pip",
+        "install",
+        "--no-deps",
+        "/workspace/scratch/5d784ffbbfd3/prepared-oct17/cue-sample-plan/dist/cue_sample_plan-0.1.0-py3-none-any.whl"
+      ],
+      "exit": 0,
+      "stdout": "Processing ./dist/cue_sample_plan-0.1.0-py3-none-any.whl\nInstalling collected packages: cue-sample-plan\nSuccessfully installed cue-sample-plan-0.1.0\n",
+      "stderr": "\n[notice] A new release of pip is available: 25.0.1 -> 26.2.1\n[notice] To update, run: /tmp/gh17-cue-sample-plan/bin/python -m pip install --upgrade pip\n"
+    },
+    {
+      "command": [
+        "/opt/codex/runtimes/codex-primary-runtime/dependencies/python/bin/python",
+        "verify_installed.py",
+        "/tmp/gh17-cue-sample-plan/bin/python"
+      ],
+      "exit": 0,
+      "stdout": "{\"installed_command\": \"cue-sample-plan\", \"outside_checkout\": true, \"source_identity_matched\": true, \"contract_checks\": \"passed\"}\n",
+      "stderr": ""
+    }
+  ],
+  "runtime_dependencies": [],
+  "remote_ci": "NOT_YET_PUBLISHED"
+}
