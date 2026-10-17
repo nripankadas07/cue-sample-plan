@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cue-sample-plan"
+version = "0.1.0"
+description = "Partition local CUE/WAVE source sample frames into track, recorded-pregap and unassigned intervals."
+requires-python = ">=3.10"
+license = {text = "MIT"}
+dependencies = []
+
+[project.scripts]
+cue-sample-plan = "cue_sample_plan:main"
+
+[tool.setuptools]
+py-modules = ["cue_sample_plan"]

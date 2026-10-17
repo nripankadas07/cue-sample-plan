@@ -1,0 +1,31 @@
+{
+  "repo": "cue-sample-plan",
+  "module": "cue_sample_plan",
+  "units": 20,
+  "capability": "Partition local CUE/WAVE source sample frames into track, recorded-pregap and unassigned intervals.",
+  "user": "Audio archivists checking how a CUE sheet would divide an uncompressed disc image.",
+  "pain": "A split plan should explain recorded gaps and account for every source frame before any encoder runs.",
+  "query": "audio CD image",
+  "leader": "flacon/flacon",
+  "comparables": [
+    "flacon/flacon",
+    "ftrvxmtrx/split2flac",
+    "jeanslack/FFcuesplitter"
+  ],
+  "quick": "cue-sample-plan --make-example example-work\n.venv/bin/cue-sample-plan example-work/example.cue",
+  "expected": "The generator writes invented silence into a new directory. The plan exits 0 and covers [0,44100) track 1, [44100,88200) recorded pregap, and [88200,176400) track 2. Planning does not modify source files.",
+  "contract": "UTF-8 CUE with quoted basename-only FILE WAVE, consecutive AUDIO tracks and INDEX 01 plus optional preceding INDEX 00. Actual little-endian RIFF/WAVE PCM or IEEE_FLOAT metadata determines sample rate, frame alignment, data bounds and byte offsets. CUE indices are 75 frames/second and must map to integer sample-frame boundaries exactly. A sample frame contains all channels. Intervals use exclusive ends and cover each source frame exactly once, including explicit unassigned leading audio findings. SHA256 identifies source bytes.",
+  "limits": "CUE 64 KiB, 16 local files, 99 tracks, 64 MiB per WAVE/128 MiB aggregate. No symlinks or path traversal, compressed audio, RF64/RIFX/extensible WAVE, synthetic PREGAP/POSTGAP, extra indices, copying, transcoding, resampling, tags or audio quality assessment. Unknown RIFF chunks are counted. --make-example only creates a new directory and refuses overwrite.",
+  "acceptance": "Prove exact contiguous frame coverage, explicit INDEX00 gaps and leading findings, stereo byte offsets, source-byte preservation, RIFF validation, and rejection of unrepresentable frame boundaries and unsafe paths.",
+  "notes": "Flacon already extracts and tags tracks from disc images. FFcuesplitter supports broader audio formats and text encodings. split2flac is archived and its README points to a replacement; it is a historical alternative, not presented as maintained. Flacon cue.cpp already treats INDEX00 and INDEX01. Our read-only sample accounting intentionally omits splitting and compressed formats.",
+  "alternatives": "Flacon or FFcuesplitter for actual extraction; inspect the CUE manually before choosing an encoder.",
+  "overlap": "The existing medialoom repository catalogs media metadata. This tool reads CUE index semantics and actual RIFF binary data to construct a complete source-frame partition, rather than another catalog.",
+  "reference": "flacon/flacon",
+  "topics": [
+    "cue",
+    "wav",
+    "audio",
+    "python",
+    "digital-preservation"
+  ]
+}

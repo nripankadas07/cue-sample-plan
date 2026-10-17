@@ -1,0 +1,177 @@
+{
+  "comparables": [
+    {
+      "full": "flacon/flacon",
+      "url": "https://github.com/flacon/flacon",
+      "stars": 546,
+      "default_branch": "master",
+      "pushed_at": "2026-10-13T15:50:26Z",
+      "updated_at": "2026-10-07T16:07:33Z",
+      "archived": false,
+      "license": "LGPL-2.1",
+      "description": "Audio File Encoder. Extracts audio tracks from an audio CD image to separate tracks.",
+      "observed": "2026-10-17T06:09:54.426Z",
+      "readme": {
+        "path": "README.md",
+        "sha": "57d484c67686abfa2e4319d89b0ca459d1bcfbbf"
+      },
+      "issues": [
+        {
+          "number": 254,
+          "title": "Changes to the file naming pattern are not taken into account unless the focus is moved to another control.",
+          "url": "https://github.com/flacon/flacon/issues/254",
+          "pull_request": false
+        },
+        {
+          "number": 248,
+          "title": "Support cue in combination with mp3",
+          "url": "https://github.com/flacon/flacon/issues/248",
+          "pull_request": false
+        },
+        {
+          "number": 247,
+          "title": "Add an option to replace spaces/special characters by custom character",
+          "url": "https://github.com/flacon/flacon/issues/247",
+          "pull_request": false
+        },
+        {
+          "number": 231,
+          "title": "Bump actions/download-artifact from 3 to 4.1.7 in /.github/workflows",
+          "url": "https://github.com/flacon/flacon/pull/231",
+          "pull_request": true
+        },
+        {
+          "number": 227,
+          "title": "Dark theme in flacon",
+          "url": "https://github.com/flacon/flacon/issues/227",
+          "pull_request": false
+        }
+      ],
+      "observation_scope": "Current metadata, README and up to five issue/PR records read; no exhaustive global ranking or competitor execution benchmark."
+    },
+    {
+      "full": "ftrvxmtrx/split2flac",
+      "url": "https://github.com/ftrvxmtrx/split2flac",
+      "stars": 259,
+      "default_branch": "master",
+      "pushed_at": "2020-05-08T20:11:32Z",
+      "updated_at": "2026-07-11T18:19:33Z",
+      "archived": true,
+      "license": "NOASSERTION",
+      "description": "Split flac/ape/wv/wav + cue sheet into separate tracks",
+      "observed": "2026-10-17T06:09:54.316Z",
+      "readme": {
+        "path": "README.md",
+        "sha": "8805a8ddcde9ad532dc571f4aee555b52671373a"
+      },
+      "issues": [
+        {
+          "number": 40,
+          "title": "Support BSD sed and improvements to cuefile handling",
+          "url": "https://github.com/ftrvxmtrx/split2flac/pull/40",
+          "pull_request": true
+        },
+        {
+          "number": 39,
+          "title": "split2flac-bash-completion.sh: Syntax error",
+          "url": "https://github.com/ftrvxmtrx/split2flac/issues/39",
+          "pull_request": false
+        },
+        {
+          "number": 38,
+          "title": "fix Copy Over \"cannot stat\" error",
+          "url": "https://github.com/ftrvxmtrx/split2flac/pull/38",
+          "pull_request": true
+        },
+        {
+          "number": 37,
+          "title": "Use current directory as default if undefined",
+          "url": "https://github.com/ftrvxmtrx/split2flac/pull/37",
+          "pull_request": true
+        },
+        {
+          "number": 36,
+          "title": "Try to detect charset with 'file' command",
+          "url": "https://github.com/ftrvxmtrx/split2flac/pull/36",
+          "pull_request": true
+        }
+      ],
+      "observation_scope": "Current metadata, README and up to five issue/PR records read; no exhaustive global ranking or competitor execution benchmark."
+    },
+    {
+      "full": "jeanslack/FFcuesplitter",
+      "url": "https://github.com/jeanslack/FFcuesplitter",
+      "stars": 98,
+      "default_branch": "main",
+      "pushed_at": "2026-10-13T07:50:11Z",
+      "updated_at": "2026-10-09T09:53:36Z",
+      "archived": false,
+      "license": "GPL-3.0",
+      "description": "FFmpeg based audio splitter for CDDA images associated with .cue files",
+      "observed": "2026-10-17T06:09:54.221Z",
+      "readme": {
+        "path": "README.md",
+        "sha": "7b9baf4b7f5d5214f2012091e1e47c4dcceb8438"
+      },
+      "issues": [
+        {
+          "number": 52,
+          "title": "Option to disable .ffcuesplitter.log",
+          "url": "https://github.com/jeanslack/FFcuesplitter/issues/52",
+          "pull_request": false
+        }
+      ],
+      "observation_scope": "Current metadata, README and up to five issue/PR records read; no exhaustive global ranking or competitor execution benchmark."
+    }
+  ],
+  "code_references": [
+    {
+      "repo": "flacon/flacon",
+      "sha": "e0222ba787f58caca2f409190753c8949e26fa05",
+      "url": "https://github.com/flacon/flacon/blob/master/cue.cpp",
+      "observed": "2026-10-17T06:25:16.017Z"
+    }
+  ],
+  "queries": [
+    {
+      "query": "VCD waveform",
+      "url": "https://github.com/search?q=VCD+waveform&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:55.959Z"
+    },
+    {
+      "query": "mesh analysis",
+      "url": "https://github.com/search?q=mesh%20analysis&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:56.979Z"
+    },
+    {
+      "query": "modbus",
+      "url": "https://github.com/search?q=modbus&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:57.966Z"
+    },
+    {
+      "query": "cue splitter",
+      "url": "https://github.com/search?q=cue%20splitter&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:58.843Z"
+    },
+    {
+      "query": "PGN parser",
+      "url": "https://github.com/search?q=PGN%20parser&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:07:59.739Z"
+    },
+    {
+      "query": "3D data processing",
+      "url": "https://github.com/search?q=3D+data+processing&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:25:19.570Z"
+    },
+    {
+      "query": "modbus library",
+      "url": "https://github.com/search?q=modbus+library&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:26:25.149Z"
+    },
+    {
+      "query": "audio CD image",
+      "url": "https://github.com/search?q=audio+CD+image&type=repositories&s=stars&o=desc",
+      "observed": "2026-10-17T06:26:31.848Z"
+    }
+  ]
+}
